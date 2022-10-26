@@ -87,8 +87,11 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    noInfo: true,
-    overlay: true
+    //noInfo: true,
+    //overlay: true
+    host: '0.0.0.0',
+    port: 8080,
+    liveReload: true
   },
   performance: {
     hints: false
